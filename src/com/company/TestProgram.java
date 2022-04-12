@@ -23,15 +23,14 @@ public class TestProgram {
     // Add risk into an array:
     Risk[] risks = {risk1, risk2, risk3, risk4, risk5, risk6, risk7, risk8, risk9, risk10, risk11, risk12};
 
+    // Instantiate RiskAnalysis with the array risks:
     new RiskAnalysis().displayRiskAnalysis(risks);
-
   }
 
 
     public static void main(String[] args) {
 
       new TestProgram().mainMenu();
-
 
     }
 }
