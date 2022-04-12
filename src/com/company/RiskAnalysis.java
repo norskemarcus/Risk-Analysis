@@ -31,13 +31,13 @@ public class RiskAnalysis {
   }
 
     public void displaySeverityLevel(int degreeOfSeverity) {
-      if (degreeOfSeverity <= 5) {
+      if (degreeOfSeverity < 5) {
         System.out.print("\t" + ANSI_GREEN + " Very_Low" + ANSI_RESET);
-      } else if (degreeOfSeverity >= 10 && degreeOfSeverity < 15) {
+      } else if (degreeOfSeverity >= 5 && degreeOfSeverity < 10) {
         System.out.print("\t" + ANSI_GREEN + " Low" + ANSI_RESET);
-      } else if (degreeOfSeverity > 10 && degreeOfSeverity <= 15) {
+      } else if (degreeOfSeverity >= 10 && degreeOfSeverity < 15) {
         System.out.print("\t" + ANSI_YELLOW + " Medium" + ANSI_RESET);
-      } else if (degreeOfSeverity > 15 && degreeOfSeverity <= 20) {
+      } else if (degreeOfSeverity >= 15 && degreeOfSeverity < 20) {
         System.out.print("\t" + ANSI_RED + " High" + ANSI_RESET);
       } else {
         System.out.print("\t" + ANSI_RED + " Very_High" + ANSI_RESET);
